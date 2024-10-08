@@ -34,7 +34,7 @@ const questions = [
         ]
     },
     {
-        question: "Which country is known for its traditional Fair Isle knitting?",
+        question: "Which country is known for its traditional colorwork sweaters?",
         answers: [
             { text: "Norway", correct: false },
             { text: "Iceland", correct: false },
