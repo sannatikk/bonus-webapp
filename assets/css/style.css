@@ -9,13 +9,13 @@ body {
     font-size: 16px;
     line-height: 1.25;
     padding: 20px;
-    background-image: url(/assets/images/background.jpg);
+    background-image: url(../images/background.jpg);
 }
 
 body.dark-theme {
     background-color: #19030d;
     color: white;
-    background-image: url(/assets/images/dark-background.jpg);
+    background-image: url(../images/dark-background.jpg);
 }
 
 nav {
