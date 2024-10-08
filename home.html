@@ -1,0 +1,111 @@
+<section id="bio" class="flex-item">
+    <h2>My Life</h2>
+    <p>
+        I was born in a small town in Finland, where I was raised by a pack of wolves. I learned to speak their language and became their leader. 
+        Together, we roamed the forests of Finland, hunting elk and wild boar. I was a fair and just leader, and the wolves loved me as one of their own. 
+        But I knew that I was different from them, and that I had a greater destiny to fulfill. So I left the pack and set out on my own, determined to make my mark on the world.
+        <br><br>After a long and arduous journey, I arrived in the United States, where I settled in a small town in the Midwest. I found work as a lumberjack, and spent my days felling trees and hauling logs. 
+        But I knew that there was more to life than cutting down trees, so I enrolled in a local community college and began taking classes in computer science. 
+        I discovered that I had a natural talent for programming, and soon I was writing code that was more elegant and efficient than anything my professors had ever seen.
+        <br><br>After graduating from college, I landed a job at a prestigious tech company in Silicon Valley. I quickly rose through the ranks, and soon I was leading a team of developers on a groundbreaking new project. 
+        The project was a huge success, and I became a legend in the tech world. But I knew that there was still more to accomplish, so I left the company and struck out on my own, determined to create something truly revolutionary.
+        <br><br>And that brings us to the present day. I am now the CEO of my own tech startup, and I am on the verge of releasing a product that will change the world forever. 
+        I can't reveal too much about it yet, but I can tell you that it involves artificial intelligence, quantum computing, and a dash of magic. 
+        I am confident that it will be a huge success, and that it will cement my place in history as one of the greatest minds of the 21st century.
+        <br><br>So that's my biography in a nutshell. I hope you found it as fascinating as I do. I look forward to hearing your thoughts and feedback, and I can't wait to see what the future holds for me and my amazing new product. 
+        Thank you for taking the time to read this, and I hope you have a wonderful day.
+    </p></section>
+    <section id="hobbies" class="flex-item">
+    <h2>My Hobbies</h2>
+    <ul>
+      <li>Knitting complex lace</li>
+      <li>Birdwatching, especifically puffins and flamingoes</li>
+      <li>Hunting elk with my family</li>
+    </ul></section>
+
+    <section id="survey" class="flex-item">
+        <h2>Knitting Experience Survey</h2>
+        <form id="knittingForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+    
+            <div class="form-group">
+                <label>How much experience do you have with knitting?</label>
+                <div class="radio-group">
+                    <label for="none"><input type="radio" id="none" name="experience" value="none" required>
+                    None</label>
+    
+                    <label for="beginner"><input type="radio" id="beginner" name="experience" value="beginner">
+                    A little: simple patterns, basic stitches</label>
+    
+                    <label for="intermediate"><input type="radio" id="intermediate" name="experience" value="intermediate">
+                    Some: basic colorwork and shaping, complex stitches</label>
+    
+                    <label for="advanced"><input type="radio" id="advanced" name="experience" value="advanced">
+                    Plenty: advanced colorwork and shaping, pattern mods, professional finishing</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label>What is your favorite type of yarn? (Select all that apply)</label>
+                <div class="checkbox-group">
+                    <label for="wool"><input type="checkbox" id="wool" name="favoriteYarn" value="wool">
+                    Wool</label>
+    
+                    <label for="cotton"><input type="checkbox" id="cotton" name="favoriteYarn" value="cotton">
+                    Cotton</label>
+    
+                    <label for="silk"><input type="checkbox" id="silk" name="favoriteYarn" value="silk">
+                    Silk</label>
+    
+                    <label for="alpaca"><input type="checkbox" id="alpaca" name="favoriteYarn" value="alpaca">
+                    Alpaca</label>
+    
+                    <label for="other"><input type="checkbox" id="other" name="favoriteYarn" value="other">
+                    Other</label>
+                </div>
+            </div>
+    
+            <div class="form-group">
+                <label for="needles">What is your preferred knitting needle material?</label>
+                <select id="needles" name="needles">
+                    <option value="bamboo">Bamboo</option>
+                    <option value="metal">Metal</option>
+                    <option value="plastic">Plastic</option>
+                    <option value="wood">Wood</option>
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="comments">Any additional comments or favorite knitting projects?</label>
+                <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+            </div>
+    
+            <div class="form-group">
+                <input type="submit" value="Submit Survey">
+            </div>
+        </form>
+    </section>  
+
+    <section id="quiz" class="flex-item">
+        <div class="quiz-container">
+            <h2>Knitting Quiz</h2>
+            <form id="quiz-form">
+                <div id="question-container">
+                    <!-- All questions will be dynamically added here -->
+                </div>
+                <button id="submit-button" type="submit" class="btn">Submit Quiz</button>
+                <div id="score-container" class="score-container" style="display: none;">
+                    <h4>Your Score: <span id="score"></span></h4>
+                    <button id="restart-button" class="btn" type="button">Restart Quiz</button>
+                </div>
+            </form>
+        </div>
+    </section>

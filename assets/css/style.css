@@ -1,0 +1,253 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #6ec37037; */
+    font-family: 'Georgia', serif;
+    color: black;
+    font-size: 16px;
+    line-height: 1.25;
+    padding: 20px;
+    background-image: url(/assets/images/background.jpg);
+}
+
+body.dark-theme {
+    background-color: #19030d;
+    color: white;
+    background-image: url(/assets/images/dark-background.jpg);
+}
+
+nav {
+    text-align: center;
+    padding-top: 20px;
+    border: 1px solid #540f2f;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 15px;
+} 
+
+nav.dark-theme {
+    border: 1px solid #e9d6df;
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    border: 1px solid #540f2f;
+    border-radius: 10px;
+    margin: 30px;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+h1 {
+    color: #540f2f;
+    font-size: 50px;
+}
+
+h1.dark-theme {
+    color: #cbd7cf;
+}
+
+h2 {
+    color: #7b033b;
+    font-size: 40px;
+}
+
+h2.dark-theme {
+    color: #e9d6df;
+}
+
+h3 {
+    color: #7b033b;
+    font-size: 30px;
+}
+
+h3.dark-theme {
+    color: #e9d6df;
+}
+
+h4 {
+    color: #7b033b;
+    font-size: 20px;
+}
+
+h4.dark-theme {
+    color: #e9d6df;
+}
+
+a {
+    color: #5b033f;
+    text-decoration: underline;
+}
+
+a.dark-theme {
+    color: #e9d6df;
+}
+
+img {
+    max-width: 500px;
+    max-height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+flex-item {
+    display: flex;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #324932;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.35); /* Slightly visible white with 95% opacity */
+}
+
+form.dark-theme {
+    background-color: rgba(0, 0, 0, 0.35); /* Slightly visible black with 95% opacity */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Georgia', serif;
+}
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px; /* margin between checkbox/radio and label text */
+}
+
+/* Ensuring the checkbox and text align properly */
+.checkbox-group label {
+    display: flex; /* ensures checkbox and text align properly */
+    align-items: center; /* ensures checkbox and text align properly */}
+
+button, input[type="submit"] {
+    padding: 12px 20px;
+    background-color: #7b033b;
+    font-family: 'Georgia', serif;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.dark-theme, input[type="submit"].dark-theme {
+    background-color: #a57c98;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #2c2526;
+}
+
+button:hover.dark-theme, input[type="submit"]:hover.dark-theme {
+    background-color: #5b033f;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    form {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+#image-gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+/* Hover effect for zooming the image */
+figure:hover img {
+    transform: scale(1.5); /* Zoom in on hover */
+    filter: brightness(90%); /* Dim the image slightly */
+}
+
+/* Style for the caption */
+figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    max-width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.323); /* Semi-transparent background */
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(100%);
+}
+
+/* Hover effect for displaying the caption */
+figure:hover figcaption {
+    opacity: 1; /* Show the caption on hover */
+    transform: translateY(0); /* Move the caption up into view */
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    figcaption {
+        padding: 10px 20px;
+    }
+}
