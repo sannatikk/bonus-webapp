@@ -81,6 +81,10 @@ function updateNavLinks(page) {
             <br><a href="#hobbies" class="internal-link">Jump to Hobbies</a> 
             | <a href="#survey" class="internal-link">Jump to Survey</a>
             | <a href="#quiz" class="internal-link">Jump to Quiz</a>`;
+
+            if (localStorage.getItem('theme') === 'dark') {
+                applyDarkThemeToElements(extraLink);
+            } 
     } else {
         extraLink.innerHTML = '';  // No extra links on home or contact pages
     }
